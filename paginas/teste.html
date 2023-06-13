@@ -1,29 +1,32 @@
-<!DOCTYPE HTML>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-    <title>Menu Dropdown Horizontal - Linha de Código</title>
-     <!-- Aqui chamamos o nosso arquivo css externo -->
-    <link rel="stylesheet" type="text/css"  href="estilo.css" />
-    <!--[if lte IE 8]>
- <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
- <![endif]-->
+  <style>
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-<nav>
-  <ul class="menu">
-		<li><a href="#">Home</a></li>
-		<li><a href="#">Sobre</a></li>
-	  		<li><a href="#">O que fazemos?</a>
-	         	<ul>
-	                  <li><a href="#">Web Design</a></li>
-	                  <li><a href="#">SEO</a></li>
-	                  <li><a href="#">Design</a></li>
-	       		</ul>
-			</li>
-		<li><a href="#">Links</a></li>
-		<li><a href="#">Contato</a></li>
-</ul>
-</nav>
+  <div class="dropdown">
+    <button>Menu</button>
+    <div class="dropdown-content">
+      <a href="#">Opção 1</a>
+      <a href="#">Opção 2</a>
+      <a href="#">Opção 3</a>
+    </div>
+  </div>
 </body>
 </html>
