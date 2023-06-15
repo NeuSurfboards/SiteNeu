@@ -1,93 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <style>
-    /* Navbar container */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  font-family: Arial;
-}
-
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="teste.css">
+  <title>teste</title>
 </head>
 <body>
-  <nav class="navbar">
-    <a href="#home">Home</a>
-    <a href="#news">Contato</a>
-    <div class="dropdown">
-      <button class="dropbtn">Dropdown
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="#">LongBoards</a>
-        <a href="#">Pranchas Performance</a>
-        <a href="#">fishs</a>
-      </div>
+  <!-- <ul class="slider">
+    <li>
+      <input type="radio" id="slide1" name="slide" checked>
+      <label for="slide1"></label>
+      <img src="../ImagensGeral/DSC04882.JPG" />
+    </li>
+    <li>
+      <input type="radio" id="slide2" name="slide">
+      <label for="slide2"></label>
+      <img src="../ImagensGeral/fotober.JPG" />
+    </li>
+    <li>
+      <input type="radio" id="slide3" name="slide">
+      <label for="slide3"></label>
+      <img src="../ImagensGeral/5020d77f-098d-4891-988f-892f6ce8aeb7.jpg" />
+    </li>
+</ul> -->
+
+  <section class="slider">
+    <input name='slide' type="radio" >
+    <input name='slide' type="radio" checked>
+    <input name='slide' type="radio">
+    <input name='slide' type="radio">
+
+    <div class="slider-content">
+        <div class="slider-item"><img src="../ImagensGeral/fotober.JPG" alt=""></div>
+        <div class="slider-item"><img src="../ImagensGeral/NeuEFishsCorte.jpg" alt=""></div>
+        <div class="slider-item"><img src="../ImagensGeral/5020d77f-098d-4891-988f-892f6ce8aeb7.jpg" alt=""></div>
+        <div class="slider-item"><img src="../ImagensGeral/fotoRafaUlu.jpg" alt=""></div>
     </div>
-  </nav>
+  </section>
+  
 </body>
 </html>
