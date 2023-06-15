@@ -98,9 +98,6 @@ main{
 .slider{
     overflow: hidden;
     width: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
 }
 .slider > .slider-content{
     display: flex;
