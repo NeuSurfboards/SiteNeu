@@ -123,6 +123,22 @@ main{
 .slider > input:nth-child(4):checked ~ .slider-content{
     transform: translateX(-300%);
 }
+.slider > input:nth-child(5):checked ~ .slider-content{
+    transform: translateX(-400%);
+}
+.slider > input:nth-child(6):checked ~ .slider-content{
+    transform: translateX(-500%);
+}
+.slider > input:nth-child(7):checked ~ .slider-content{
+    transform: translateX(-600%);
+}
+.slider > input:nth-child(8):checked ~ .slider-content{
+    transform: translateX(-700%);
+}
+.slider > input:nth-child(9):checked ~ .slider-content{
+    transform: translateX(-800%);
+}
+
 .slider-item{
     max-width: 100%;
 }
