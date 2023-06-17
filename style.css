@@ -138,14 +138,12 @@ main{
 .slider > input:nth-child(9):checked ~ .slider-content{
     transform: translateX(-800%);
 }
-
 .slider-item{
     max-width: 100%;
 }
 .slider-content{
     max-width: 100%;
 }
-
 main{
     background-color: var(--cor1);
     min-width: 300px;
@@ -161,15 +159,18 @@ main h1{
     color: var(--cor4);
     font-family: var(--fonte1);
     font-weight: normal;
-    font-size: 1.8em;
+    font-size: 2.5em;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 main h2{
     color: var(--cor4);
     font-family: var(--fonte1);
-    font-size: 1.3em;
+    font-size: 1.8em;
     background-image: linear-gradient(to right, var(--cor3), transparent);
     text-indent: 8px;
     font-weight: normal;
+    border-radius: 5px;
 }
 main p{
     margin: 15px 0px 15px 0px;
@@ -180,6 +181,7 @@ main p{
 }
 main img{
     width: 100%;
+    margin-bottom: 100px;
 }
 footer{
     background-color: var(--cor4);
