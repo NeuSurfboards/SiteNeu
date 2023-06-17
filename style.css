@@ -171,6 +171,7 @@ main h2{
     text-indent: 8px;
     font-weight: normal;
     border-radius: 5px;
+    padding: 5px;
 }
 main p{
     margin: 15px 0px 15px 0px;
@@ -178,6 +179,7 @@ main p{
     text-indent: 30px;
     line-height: 1.5em;
     font-size: 1em;
+    font-family: var(--fonte1);
 }
 main img{
     width: 100%;
