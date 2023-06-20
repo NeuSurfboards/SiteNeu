@@ -30,46 +30,13 @@
             <a href="paginas/alternative.html">Alternativas</a>
           </div>
         </div>
-      </nav>
-    <!-- <nav>
-        <a href="#home">Home</a>
-        <a href="paginas/pranchas.html">Pranchas</a>
-        <a href="paginas/contato.html">Contato</a>
-        <a href="paginas/teste.html">teste</a>
-    </nav> -->
-
-    <!-- <div id="imagem">
-        <img src="ImagensGeral/NeuEFishsCorte.jpg" alt="ImagemNeu">
-    </div> -->
-
-    <!-- <div id="imagem">
-        <img src="ImagensGeral/NeuEFishsCorte.jpg" alt="ImagemNeu" class="slide">
-        <img src="ImagensGeral/fotober.JPG" class="slide">
-        <img src="ImagensGeral/fotoRafaUlu.jpg" alt="slide">
-    </div> -->
-    <!-- <div id="slideshow">
-        <img src="ImagensGeral/NeuEFishsCorte.jpg" alt="ImagemNeu" class="slide">
-        <img src="ImagensGeral/fotober.JPG" class="slide">
-        <img src="ImagensGeral/fotoRafaUlu.jpg" class="slide">
-    </div> -->
-
+    </nav>
+      <div class="carousel">
+        <img src="ImagensGeral/fotober.JPG" alt="Imagem 1">
+        <img src="../ImagensPranchas/BigGuyFish.JPG" alt="Imagem 2">
+        <img src="../ImagensPranchas/HyperKraftModel.JPG" alt="Imagem 3">
+      </div>
     <main>
-        <div id="imagem">
-            <img src="ImagensGeral/NeuEFishsCorte.jpg" alt="ImagemNeu">
-        </div>
-        <section class="slider">
-            <input name='slide' type="radio" >
-            <input name='slide' type="radio" checked>
-            <input name='slide' type="radio">
-            <input name='slide' type="radio">
-        
-            <div class="slider-content">
-                <div class="slider-item"><img src="../Pranchas/BigBullet6Channels/BigBullet6Channels.JPG" alt=""></div>
-                <div class="slider-item"><img src="../Pranchas/BigBullet6Channels/BigBullet6Channels2.JPG" alt=""></div>
-                <div class="slider-item"><img src="../Pranchas/BigBullet6Channels/BigBullet6Channels3.JPG" alt=""></div>
-                <div class="slider-item"><img src="../ImagensGeral/fotober.JPG" alt=""></div>
-                <!-- <div class="slider-item"><img src="../ImagensGeral/fotoRafaUlu.jpg" alt=""></div> -->
-            </div>
         </section>
         <article>
             <h1>Sobre</h1>
@@ -78,19 +45,31 @@
         </article>
     </main>
     <footer>
-        <p>Site criado por <a href="">Bernardo Perrot</a></p>
+        <p>Site criado por <a href="https://github.com/BernardoPerrotIFSC">Bernardo Perrot</a></p>
     </footer>
     
 </body>
-<!-- <script>
-    let slides = document.querySelectorAll('.slide');
-	let currentSlide = 0;
-	let slideInterval = setInterval(nextSlide, 2000); // Troca de slide a cada 2 segundos
-
-	function nextSlide() {
-		slides[currentSlide].classList.remove('active');
-		currentSlide = (currentSlide + 1) % slides.length;
-		slides[currentSlide].classList.add('active');
-	}
-</script> -->
+<script>
+    const carousel = document.querySelector('.carousel');
+    const images = carousel.getElementsByTagName('img');
+    let currentIndex = 0;
+    
+    function showImage(index) {
+      for (let i = 0; i < images.length; i++) {
+        images[i].style.display = 'none';
+      }
+      images[index].style.display = 'block';
+    }
+    
+    function nextImage() {
+      currentIndex++;
+      if (currentIndex >= images.length) {
+        currentIndex = 0;
+      }
+      showImage(currentIndex);
+    }
+    
+    setInterval(nextImage, 5000); // Altere o valor 2000 para ajustar o tempo de transição entre as imagens (em milissegundos)
+    
+</script>
 </html>

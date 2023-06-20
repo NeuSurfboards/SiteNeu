@@ -7,48 +7,33 @@
   <title>teste</title>
 </head>
 <body>
-  <!-- <ul class="slider">
-    <li>
-      <input type="radio" id="slide1" name="slide" checked>
-      <label for="slide1"></label>
-      <img src="../ImagensGeral/DSC04882.JPG" />
-    </li>
-    <li>
-      <input type="radio" id="slide2" name="slide">
-      <label for="slide2"></label>
-      <img src="../ImagensGeral/fotober.JPG" />
-    </li>
-    <li>
-      <input type="radio" id="slide3" name="slide">
-      <label for="slide3"></label>
-      <img src="../ImagensGeral/5020d77f-098d-4891-988f-892f6ce8aeb7.jpg" />
-    </li>
-</ul> -->
-<!-- https://wallacemaxters.com.br/blog/63/como-fazer-um-carrossel-com-css-puro -->
-  <section class="slider">
-    <input name='slide' type="radio" >
-    <input name='slide' type="radio" checked>
-    <input name='slide' type="radio">
-
-    <div class="slider-content">
-        <div class="slider-item"><img src="../Pranchas/BigBullet6Channels/BigBullet6Channels.JPG" alt=""></div>
-        <div class="slider-item"><img src="../Pranchas/BigBullet6Channels/BigBullet6Channels2.JPG" alt=""></div>
-        <div class="slider-item"><img src="../Pranchas/BigBullet6Channels/BigBullet6Channels3.JPG" alt=""></div>
-        <!-- <div class="slider-item"><img src="../ImagensGeral/fotoRafaUlu.jpg" alt=""></div> -->
-    </div>
-  </section>
-  <section class="slider">
-    <input name='slide' type="radio" checked>
-    <input name='slide' type="radio">
-    <input name='slide' type="radio">
-
-    <div class="slider-content">
-        <div class="slider-item"><img src="../" alt=""></div>
-        <div class="slider-item"><img src="../" alt=""></div>
-        <div class="slider-item"><img src="../" alt=""></div>
-    </div>
-  </section>
-
-  
+  <div class="carousel">
+    <img src="../ImagensPranchas/BigBullet6Channels.JPG" alt="Imagem 1">
+    <img src="../ImagensPranchas/BigGuyFish.JPG" alt="Imagem 2">
+    <img src="../ImagensPranchas/HyperKraftModel.JPG" alt="Imagem 3">
+  </div>
 </body>
+<script>
+const carousel = document.querySelector('.carousel');
+const images = carousel.getElementsByTagName('img');
+let currentIndex = 0;
+
+function showImage(index) {
+  for (let i = 0; i < images.length; i++) {
+    images[i].style.display = 'none';
+  }
+  images[index].style.display = 'block';
+}
+
+function nextImage() {
+  currentIndex++;
+  if (currentIndex >= images.length) {
+    currentIndex = 0;
+  }
+  showImage(currentIndex);
+}
+
+setInterval(nextImage, 5000); // Altere o valor 2000 para ajustar o tempo de transição entre as imagens (em milissegundos)
+
+</script>
 </html>

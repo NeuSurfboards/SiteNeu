@@ -31,6 +31,7 @@ main{
     height: 100px;
     margin: 0;
     border-radius: 5px;
+    
 }
 .navbar {
     overflow: hidden;
@@ -84,6 +85,14 @@ main{
 }
 .dropdown:hover .dropdown-content {
     display: block;
+}
+.carousel{
+    width: 100%;
+    background-color: #222601;
+}
+.carousel img{
+    width: 100px;
+
 }
 #imagem{
     max-width: 100%;
