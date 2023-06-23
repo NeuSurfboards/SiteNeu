@@ -113,7 +113,7 @@ picture>img{
     max-width: 100%;
     height: auto;  
 
-}
+} */
 #imagem img{
     text-align: center;
     max-width: 100%;
@@ -167,7 +167,7 @@ picture>img{
 }
 .slider-content{
     max-width: 100%;
-} */
+}
 main{
     background-color: var(--cor1);
     min-width: 300px;
@@ -249,9 +249,14 @@ footer a:hover{
     color:var(--cor1)
 }
 
+
+
+
+
 * {box-sizing: border-box;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
+
 
 .slideshow-container {
 
@@ -297,6 +302,10 @@ img {vertical-align: middle;}
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+#dot1{
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 
