@@ -5,6 +5,7 @@
     --cor4: #384001;
     --cor5: #222601;
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 *{
@@ -15,6 +16,15 @@
 }
 body{
     background-color: var(--cor1);
+}
+#titulo{
+    font-size: 3.0em;
+    font-family: var(--fonte2);
+    font-weight: normal;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
 }
 main{
     min-width: 300px;
@@ -187,6 +197,18 @@ main h2{
     border-radius: 5px;
     padding: 5px;
 }
+main h3{
+    color: var(--cor4);
+    font-family: var(--fonte1);
+    font-size: 1.5em;
+    font-weight: normal;
+
+}
+main h4{
+    padding: 5px;
+    font-size: 1.3em;
+    font-family: var(--fonte1);
+}
 main p{
     margin: 15px 0px 15px 0px;
     text-align: justify;
@@ -198,6 +220,16 @@ main p{
 main img{
     width: 100%;
     margin-bottom: 100px;
+}
+.LogoRedes{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+}
+.LogoRedes > img{
+    width: 40%;
+    margin-top: 30px;
 }
 footer{
     background-color: var(--cor4);
