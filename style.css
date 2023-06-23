@@ -30,8 +30,7 @@ main{
 #header1>img{
     height: 100px;
     margin: 0;
-    border-radius: 5px;
-    
+    border-radius: 5px;   
 }
 .navbar {
     overflow: hidden;
