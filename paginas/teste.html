@@ -3,37 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="teste.css">
+  <link rel="stylesheet" href="../style.css">
   <title>teste</title>
 </head>
 <body>
-  <div class="carousel">
-    <img src="../ImagensPranchas/BigBullet6Channels.JPG" alt="Imagem 1">
-    <img src="../ImagensPranchas/BigGuyFish.JPG" alt="Imagem 2">
-    <img src="../ImagensPranchas/HyperKraftModel.JPG" alt="Imagem 3">
+  <main>
+    <h1>Contato</h1>
+    <h3>Para Encomendas, entrar em contato clicando nas imagens abaixo</h3>
+    <h4>Whats App</h4>
+  
+    <div id="class">
+      <a href="http://wa.me/5548991197606/"><img src="../LogosRedes/whats.webp" alt=""></a>
+      <h3>Nos acompanhe no Instagram, @NEUSURFBOARDS</h3>
+      <a href="https://www.instagram.com/neusurfboards/"><img src="../LogosRedes/instagram.png" alt=""></a>
+    </div>
+      
+  </main>
   </div>
 </body>
-<script>
-const carousel = document.querySelector('.carousel');
-const images = carousel.getElementsByTagName('img');
-let currentIndex = 0;
-
-function showImage(index) {
-  for (let i = 0; i < images.length; i++) {
-    images[i].style.display = 'none';
-  }
-  images[index].style.display = 'block';
-}
-
-function nextImage() {
-  currentIndex++;
-  if (currentIndex >= images.length) {
-    currentIndex = 0;
-  }
-  showImage(currentIndex);
-}
-
-setInterval(nextImage, 5000); // Altere o valor 2000 para ajustar o tempo de transição entre as imagens (em milissegundos)
-
-</script>
 </html>
